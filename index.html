@@ -3,25 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Velocitate Reader | RSVP Speed Reading</title>
+    <title>Velocitate | RSVP Speed Reading, Humanized</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #000; color: #fff; text-align: center; display: flex; flex-direction: column; justify-content: center; height: 100vh; margin: 0; }
-        h1 { font-size: 3rem; margin-bottom: 0.5rem; }
-        p { color: #888; font-size: 1.2rem; margin-bottom: 2rem; }
-        .cta { background: #007AFF; color: white; padding: 15px 30px; text-decoration: none; border-radius: 25px; font-weight: bold; transition: 0.3s; }
-        .cta:hover { opacity: 0.8; }
-        .footer { position: absolute; bottom: 20px; width: 100%; font-size: 0.8rem; color: #444; }
-        a { color: #444; }
+        :root { --accent: #007AFF; --bg: #000; --card: #111; --text: #fff; --secondary: #888; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 0; }
+        
+        /* Hero Section */
+        .hero { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 80vh; text-align: center; padding: 20px; }
+        h1 { font-size: 4rem; margin-bottom: 0.5rem; letter-spacing: -1px; }
+        .tagline { font-size: 1.5rem; color: var(--secondary); margin-bottom: 2.5rem; max-width: 600px; }
+        
+        /* CTA Button */
+        .cta { background: var(--accent); color: white; padding: 18px 35px; text-decoration: none; border-radius: 30px; font-weight: bold; font-size: 1.1rem; transition: transform 0.2s; }
+        .cta:hover { transform: scale(1.05); }
+
+        /* Features Section */
+        .features { max-width: 1000px; margin: 0 auto 100px auto; padding: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .feature-card { background: var(--card); padding: 30px; border-radius: 20px; border: 1px solid #222; }
+        .feature-card h3 { color: var(--accent); margin-top: 0; font-size: 1.4rem; }
+        .feature-card p { color: var(--secondary); line-height: 1.5; font-size: 1rem; margin-bottom: 0; }
+
+        /* Footer */
+        .footer { text-align: center; padding: 40px 20px; border-top: 1px solid #222; font-size: 0.85rem; color: #444; }
+        .footer a { color: var(--accent); text-decoration: none; margin: 0 10px; }
     </style>
 </head>
 <body>
-    <h1>Velocitate</h1>
-    <p>RSVP Speed Reading. Reimagined.</p>
-    <a href="https://testflight.apple.com/join/eGEN9Txm" class="cta">Join the Beta on TestFlight</a>
-    
+
+    <section class="hero">
+        <h1>Velocitate</h1>
+        <p class="tagline">RSVP Speed Reading, Humanized. Experience the rhythm of the brain, not just the speed of a processor.</p>
+        <a href="https://testflight.apple.com/join/eGEN9Txm" class="cta">Join the Beta on TestFlight</a>
+    </section>
+
+    <section class="features">
+        <div class="feature-card">
+            <h3>Speed Ramping</h3>
+            <p>Don't shock your brain with instant high speed. Our adaptive algorithm gradually increases WPM from your starting pace to your goal, mimicking a natural mental warm-up.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>Adaptive Pacing</h3>
+            <p>Reading isn't mechanical. Velocitate weights punctuation and word complexity to mirror the natural cadence of human speech, making high-speed reading feel fluid.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>Smart Chapter Stops</h3>
+            <p>Context is everything. The engine automatically identifies and pauses at chapter headings, providing the "breathing room" required for long-term comprehension.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>Universal Dimmer</h3>
+            <p>Pro-grade focus at any time of day. Fine-tune text and focus guide opacity with a granular dimmer slider designed to reduce eye strain during deep reading sessions.</p>
+        </div>
+    </section>
+
     <div class="footer">
         <a href="support.html">Support</a> | 
-        <a href="privacy.html">Privacy Policy</a> | © 2026 Velocitate Reader
+        <a href="privacy.html">Privacy Policy</a>
+        <p>© 2026 Velocitate Reader. All Rights Reserved.</p>
     </div>
+
 </body>
 </html>
