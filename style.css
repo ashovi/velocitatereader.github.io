@@ -79,6 +79,48 @@ h1 { font-size: 3.5rem; margin: 0 0 10px 0; letter-spacing: -1px; }
 }
 .cta:hover { transform: scale(1.05); }
 
+/* Support Specific Styles */
+.support-content {
+    padding-bottom: 60px;
+}
+
+.faq-section {
+    margin-top: 40px;
+}
+
+.faq-item {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.faq-item h3 {
+    color: var(--accent);
+    margin-top: 0;
+    font-size: 1.1rem;
+}
+
+.faq-item p {
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}
+
+.contact-card {
+    background: linear-gradient(145deg, #111, #080808);
+    border: 1px solid var(--accent); /* Subtle blue border to highlight contact */
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.contact-card h2 {
+    border: none;
+    margin-top: 0;
+}
+
 /* Footer */
 .footer {
     text-align: center;
