@@ -23,6 +23,24 @@ body {
     padding: 40px 20px;
 }
 
+/* Add this to style.css */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh; /* This gives it that 'full-screen' opening feel */
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.tagline {
+    font-size: 1.25rem;
+    color: var(--secondary);
+    max-width: 600px;
+    margin-bottom: 2rem;
+}
+
 /* Typography */
 h1 { font-size: 3.5rem; letter-spacing: -1px; margin-bottom: 0.5rem; text-align: center; }
 h2 { font-size: 1.5rem; margin-top: 2.5rem; color: #eee; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
